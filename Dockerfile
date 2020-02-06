@@ -17,4 +17,3 @@ COPY ./entrypoint.sh ./entrypoint.sh
 ENV REGISTER_NON_INTERACTIVE=true
 ENTRYPOINT [ "./entrypoint.sh" ]
 
-https://img.shields.io/docker/pulls/woodjme/gitlab-runner-fargate.svg
