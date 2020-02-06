@@ -35,7 +35,12 @@ aws ecs create-service --cluster gitlab-runner-cluster \
 --task-definition gitlab-runner \
 --desired-count 1 \
 --launch-type "FARGATE" \
---network-configuration "awsvpcConfiguration={subnets=[subnet-xyz]}"
+--network-configuration "awsvpcConfiguration={subnets=[subnet-xyz],assignPublicIp=ENABLED}"
 ```
 
 Once the service starts you should see a registered runner in GitLab
+
+## Limitations
+
+* Fargate cannot run in privileged mode so running using a Docker executor isn't possible, this means docker builds and pushes can't be done from within these runners.
+
