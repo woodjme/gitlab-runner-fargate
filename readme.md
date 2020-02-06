@@ -1,5 +1,9 @@
 # Gitlab Runner Fargate
 
+![](https://img.shields.io/docker/pulls/woodjme/gitlab-runner-fargate.svg)
+![](https://img.shields.io/docker/build/woodjme/gitlab-runner-fargate)
+![](https://img.shields.io/github/v/tag/woodjme/gitlab-runner-fargate)
+
 ## Usage
 
 ### Setup Fargate
