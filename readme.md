@@ -12,8 +12,8 @@ aws ecs create-cluster --cluster-name gitlab-runner-cluster
 
 #### Register a Task Definition
 
-* Replace http://gitlab.com if you're using a self-hosted GitLab Instance
-* Replace $REGISTRATION_TOKEN with your own token
+* Replace https://gitlab.com if you're using a self-hosted GitLab Instance
+* Replace $REGISTRATION_TOKEN with your own Gitlab runner registration token
 * Update the CPU and memory values if you wish, make sure it's a [supported configuration](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ```bash
