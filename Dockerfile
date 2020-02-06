@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 LABEL maintainer="me@jamiewood.io"
 
-ARG version="12.7.1"
+ARG version="12.7.0"
 # Update
 RUN apt-get update -y && apt-get upgrade -y
 
